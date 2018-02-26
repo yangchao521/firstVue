@@ -40,6 +40,7 @@
 	1.template: 视图
 	2.script： 逻辑
 	3.style： 样式
+		scoped：表示样式只在当前组件生效
 
 #Vue的基本指令
 	1.v-html: 渲染文本 <p v-html="hello"></p>
@@ -86,3 +87,8 @@
 
 #class与style绑定
 	<p v-bind:class="{ active: isActive }">哈哈</p>
+
+#父子组件
+	通信交互：
+		父亲 -> 儿子：props
+		儿子 -> 父亲：emit event
