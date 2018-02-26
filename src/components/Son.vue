@@ -1,6 +1,6 @@
 <template>
 	<div>
-		儿子:{{ title }}
+		儿子:{{ num * 3 }}
 	</div>
 </template>
 
@@ -12,7 +12,10 @@
 
 			}
 		},
-		props: ['title']
+		props: {
+			message: String,
+			num: Number
+		}
 	}
 </script>
 

@@ -1,7 +1,9 @@
 <template>
 	<div>
-		我是自定义组件
-		<Son />
+		<input type="text" name="" v-model="feng">
+		<Son :message="feng"></Son>
+		<input type="text" name="" v-model.number="num">
+		<Son :num="num"></Son>
 	</div>
 </template>
 
@@ -9,9 +11,11 @@
 	import Son from './Son.vue'
 	export default{
 		name:'mc',
-		data(){
+		data () {
 			return{
-
+				msg:"我是活的数据",
+				feng:"",
+				num:10
 			}
 		},
 		components:{
